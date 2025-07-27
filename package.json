@@ -1,15 +1,23 @@
 {
-    "name": "n8n-render",
-    "version": "1.0.0",
-    "description": "n8n on Render",
-    "main": "index.js",
-    "scripts": {
-      "start": "n8n start"
-    },
-    "dependencies": {
-      "n8n": "1.103.1"
-    },
-    "engines": {
-      "node": "20.x"
-    }
+  "name": "n8n-render",
+  "version": "1.0.0",
+  "description": "n8n on Render with Google OAuth support",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "worker": "n8n worker",
+    "build": "echo 'No build step required'",
+    "health": "curl -f http://localhost:5678/healthz || exit 1"
+  },
+  "dependencies": {
+    "n8n": "1.103.1"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": ">=9.0.0"
+  },
+  "keywords": ["n8n", "automation", "workflow", "render"],
+  "author": "Your Name",
+  "license": "MIT"
 }
