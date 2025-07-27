@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.103.1
+FROM node:18-alpine
 
 WORKDIR /app
 
